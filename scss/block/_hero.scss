@@ -1,0 +1,104 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 197px;
+    background-image: url(../img/hero_bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #014e56;
+
+}
+
+
+
+.hero__title {
+    text-align: center;
+    width: 215px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+strong {
+    color: #f67e7e;
+}
+
+.hero__text {
+    width: 327px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 187%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 258px;
+        background-image: url(../img/hero_bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .hero__title {
+        width: 350px;
+        font-size: 64px;
+        line-height: 87%;
+        margin-bottom: 24px;
+    }
+
+    .hero__text {
+        width: 457px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .hero {
+        padding-top: 129px;
+        padding-bottom: 250px;
+        background-image: url(../img/hero_bottom.svg), url(/../img/hero_left.svg);
+        background-repeat: no-repeat;
+        background-position: right 165px bottom, top 129px left;
+    }
+
+    .hero__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 126px;
+    }
+
+    .hero__title {
+        text-align: start;
+        width: 539px;
+        font-size: 100px;
+        line-height: 100%;
+    }
+
+    .hero__text {
+        text-align: start;
+        width: 445px;
+        font-size: 18px;
+        line-height: 156%;
+    }
+
+    .hero__text::before {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: #79c8c7;
+        display: block;
+        margin-bottom: 79px;
+    }
+
+
+}
